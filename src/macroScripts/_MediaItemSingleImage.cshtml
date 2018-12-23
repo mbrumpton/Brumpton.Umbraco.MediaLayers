@@ -1,0 +1,34 @@
+﻿@using MediaLayers.Umbraco.Classes
+@using Umbraco.Core
+@using Umbraco.Core.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<MediaLayers.Umbraco.Models.MediaItemBO>
+  @{
+
+      if (!string.IsNullOrEmpty(Model.SingleImageName))
+       {
+           var imageGuidUdi = GuidUdi.Parse(Model.SingleImageName);
+
+           var imageNodeId = ApplicationContext.Current.Services.EntityService.GetIdForKey(imageGuidUdi.Guid, (UmbracoObjectTypes) Enum.Parse(typeof(UmbracoObjectTypes), imageGuidUdi.EntityType, true));
+
+           var imageNode = Umbraco.TypedMedia(imageNodeId.Result);
+
+<!-- Image -->
+
+<div class="image" style="margin:10px 0px 10px 0px">
+    <p>
+        <img src="@imageNode.Url" class="img-responsive">
+
+        @{
+
+            if (!string.IsNullOrEmpty(Model.SingleImageCaption))
+            {
+                @Model.SingleImageCaption
+            }
+
+        }
+
+    </p>
+</div>     
+
+            }
+}

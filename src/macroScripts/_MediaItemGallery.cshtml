@@ -1,0 +1,60 @@
+﻿@using MediaLayers.Umbraco.Classes
+@using Newtonsoft.Json
+@using umbraco.NodeFactory
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<MediaLayers.Umbraco.Models.MediaItemBO>
+
+<!-- Gallery -->
+<div class="ml-gallery well">
+    <div class="row">
+
+        @{
+            foreach (var image in @Model.GalleryImage)
+            {
+                var url = @Helpers.GetMediaItemsFromCsvId(@Model.GalleryImage).First().Url;
+
+                <div class="col-sm-4">
+                    <a class="fancybox" data-fancybox="@Model.GalleryName.ToLower().Replace(" ", "")" data-caption="" href="@url">
+                        <img class="img-responsive" src="@url"/>
+                    </a>
+                </div>
+            }
+
+        }
+
+
+
+
+
+        @*<div class="col-sm-4">
+            <a class="fancybox" data-fancybox="gallery1" data-caption="Caption 1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+                <img class="img-responsive" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a class="fancybox" data-fancybox="gallery1" data-caption="Caption 2" href="http://farm4.staticflickr.com/3691/10185053775_701272da37_b.jpg">
+                <img class="img-responsive" src="http://farm4.staticflickr.com/3691/10185053775_701272da37_b.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a class="fancybox" data-fancybox="gallery1" data-caption="Caption 3" href="http://farm1.staticflickr.com/574/22407305427_69cc6e845f_b.jpg">
+                <img class="img-responsive" src="http://farm1.staticflickr.com/574/22407305427_69cc6e845f_b.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a class="fancybox" data-fancybox="gallery1" data-caption="Caption 4" href="http://farm1.staticflickr.com/291/18653638823_a86b58523c_b.jpg">
+                <img class="img-responsive" src="http://farm1.staticflickr.com/291/18653638823_a86b58523c_b.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a class="fancybox" data-fancybox="gallery1" data-caption="Caption 5" href="http://farm4.staticflickr.com/3691/10185053775_701272da37_b.jpg">
+                <img class="img-responsive" src="http://farm4.staticflickr.com/3691/10185053775_701272da37_b.jpg"/>
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a class="fancybox" data-fancybox="gallery1" data-caption="Caption 6" href="http://farm1.staticflickr.com/291/18653638823_a86b58523c_b.jpg">
+                <img class="img-responsive" src="http://farm1.staticflickr.com/291/18653638823_a86b58523c_b.jpg"/>
+            </a>
+        </div>*@
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@using System.Text.RegularExpressions
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<MediaLayers.Umbraco.Models.MediaItemBO>
+
+@*Generate an id based upon the collapse label*@
+
+@{
+    var collapseId = Regex.Replace(@Html.Raw(Model.CollapseLabel).ToString().ToLower(), "[^0-9a-zA-Z]+", "");
+}
+
+<!-- Collapse -->
+
+<div class="ml-collapse">
+    <p class="ml-collapse-label">
+        <a data-toggle="collapse" data-target="#@collapseId">
+            @Html.Raw(Model.CollapseLabel)
+        </a>
+    </p>
+    <div class="collapse ml-collapse-value" id="@collapseId">
+        @Html.Raw(Model.CollapseValue)
+    </div>
+</div>

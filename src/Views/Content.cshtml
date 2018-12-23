@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Content>
+@using MediaLayers.Umbraco.Models
+@using Newtonsoft.Json
+@using umbraco.NodeFactory
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var currentNode = Node.GetCurrent();
+
+    var results = currentNode.GetProperty("mediaItems") != null ? JsonConvert.DeserializeObject<List<MediaItemBO>>(currentNode.GetProperty("mediaItems").Value) : new List<MediaItemBO>();
+
+    foreach (var mediaItem in results)
+    {
+        switch (mediaItem.NcContentTypeAlias)
+        {
+            case "title":
+                Html.RenderPartial("~/macroScripts/_MediaItemTitle.cshtml", mediaItem);
+                break;
+            case "richText":
+                Html.RenderPartial("~/macroScripts/_MediaItemRichtext.cshtml", mediaItem);
+                break;
+            case "youTube":
+                Html.RenderPartial("~/macroScripts/_MediaItemVideo.cshtml", mediaItem);
+                break;
+            case "singleImage":
+                Html.RenderPartial("~/macroScripts/_MediaItemSingleImage.cshtml", mediaItem);
+                break;
+            case "youTubePlaylist":
+                Html.RenderPartial("~/macroScripts/_MediaItemVideoPlaylist.cshtml", mediaItem);
+                break;
+            case "gallery":
+                Html.RenderPartial("~/macroScripts/_MediaItemGallery.cshtml", mediaItem);
+                break;
+            case "person":
+                Html.RenderPartial("~/macroScripts/_MediaItemPerson.cshtml", mediaItem);
+                break;
+            case "collapse":
+                Html.RenderPartial("~/macroScripts/_MediaItemCollapse.cshtml", mediaItem);
+             break;
+        }
+    }
+}

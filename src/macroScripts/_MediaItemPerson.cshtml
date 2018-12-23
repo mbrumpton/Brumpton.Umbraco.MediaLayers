@@ -1,0 +1,38 @@
+﻿@using MediaLayers.Umbraco.Classes
+@using Umbraco.Core
+@using Umbraco.Core.Models
+@using Umbraco.Web.Extensions
+
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<MediaLayers.Umbraco.Models.MediaItemBO>
+
+@if (!string.IsNullOrEmpty(Model.Image))
+{
+
+    var imageGuidUdi = GuidUdi.Parse(Model.Image);
+
+    var imageNodeId = ApplicationContext.Current.Services.EntityService.GetIdForKey(imageGuidUdi.Guid, (UmbracoObjectTypes)Enum.Parse(typeof(UmbracoObjectTypes), imageGuidUdi.EntityType, true));
+
+    var imageNode = Umbraco.TypedMedia(imageNodeId.Result);
+
+
+
+    <div style="float: left; margin: 0px 30px 0px 30px; width: 44%;">
+<h3 class="m-speakers-details__title" >@Model.PersonName</h3>
+
+              @if (!string.IsNullOrEmpty(Model.PersonIntroduction))
+                {
+                    <p class="m-speakers-details__position">@Model.PersonIntroduction</p>
+                }
+
+                @if (!string.IsNullOrEmpty(Model.PersonBiography))
+                {
+                    <div class="m-speakers-details__session-description"> @Html.Raw(Model.PersonBiography)    </div>
+                }
+    
+    <figure class="m-speakers-details__image-wrapper">
+        <img src="@imageNode.Url"  class="m-speakers-details__image">
+    </figure>
+    <br/>   
+    <br />
+    </div>
+}

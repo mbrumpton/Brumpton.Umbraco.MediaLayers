@@ -1,0 +1,49 @@
+﻿ 2018-02-14 09:16:12,086 [P2608/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.4 application starting on imweb2
+ 2018-02-14 09:16:12,133 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2018-02-14 09:16:12,149 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 11ms)
+ 2018-02-14 09:16:12,211 [P2608/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2018-02-14 09:16:12,211 [P2608/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2018-02-14 09:16:12,211 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:13,961 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1750ms)
+ 2018-02-14 09:16:13,961 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2018-02-14 09:16:13,961 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2018-02-14 09:16:14,227 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:14,227 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:16:14,227 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2018-02-14 09:16:14,227 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2018-02-14 09:16:14,227 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:14,244 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:16:14,244 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2018-02-14 09:16:14,244 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 1ms)
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2018-02-14 09:16:14,258 [P2608/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2018-02-14 09:16:19,602 [P2608/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2018-02-14 09:16:20,164 [P2608/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2018-02-14 09:16:21,055 [P2608/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2018-02-14 09:16:21,055 [P2608/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2018-02-14 09:16:21,445 [P2608/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 10034ms)
+ 2018-02-14 09:16:24,070 [P2608/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://medialayers.brumpton.co.uk:80/umbraco (UmbracoModule request)
+ 2018-02-14 09:16:34,070 [P2608/D2/T9] INFO  umbraco.content - Load Xml from file...
+ 2018-02-14 09:16:34,070 [P2608/D2/T9] INFO  umbraco.content - Loaded Xml from file.
+ 2018-02-14 09:16:35,195 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:35,195 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:16:35,195 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2018-02-14 09:16:35,195 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 0ms)
+ 2018-02-14 09:16:37,039 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:16:37,039 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:16:37,039 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2018-02-14 09:16:37,039 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2018-02-14 09:17:34,148 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-02-14 09:17:34,148 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-02-14 09:17:34,148 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2018-02-14 09:17:34,148 [P2608/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2018-02-14 09:17:34,241 [P2608/D2/T10] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-02-13 09:17:34
+ 2018-02-14 13:17:34,329 [P2608/D2/T35] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-02-13 13:17:34
+ 2018-02-14 17:17:34,410 [P2608/D2/T35] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-02-13 17:17:34
+ 2018-02-14 21:17:34,611 [P2608/D2/T43] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-02-13 21:17:34
